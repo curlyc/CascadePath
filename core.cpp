@@ -215,7 +215,7 @@ void ArduboyCore::paint8Pixels(uint8_t pixels)
   SPI.transfer(pixels);
 }
 
-void ArduboyCore::paintScreen(const unsigned char *image)
+void ArduboyCore::paintScreen(unsigned char image[])
 {
   for (int i = 0; i < (HEIGHT*WIDTH)/8; i++)
   {
